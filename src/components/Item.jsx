@@ -18,7 +18,7 @@ import '../styles.css'
             </CardBody>
             <CardFooter>
             <Link to={`/item/${producto.id}`} >
-                <Button className='btn'>más detalles</Button>
+                <Button className='btn'>Más detalles</Button>
             </Link>
             </CardFooter>
             <Divider />
