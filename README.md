@@ -1,5 +1,7 @@
 # React + Vite
 
+https://github.com/AgustinaMontecchia/cursoReact/assets/110697047/39337777-cc87-4a8c-bb8a-281dc9612a66
+
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:
