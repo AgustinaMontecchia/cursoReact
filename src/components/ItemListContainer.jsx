@@ -6,15 +6,15 @@ import ItemList from './ItemList'
 
 const ItemListContainer = () => {
 
-    const [ productos, setProductos ] = useState([])
-    const { catId } = useParams()
+    const [ item, setItems ] = useState([])
+    const { categoria } = useParams()
     useEffect(() => {
         getCat()
             .then((res) => {
-                if (catId){
-                    setProductos(res.filter((prod) => prod.categoria === catId))
+                if (categoria){
+                    setItems(res.filter((item) => prod.categoria === categoria))
                 }else {
-                    setProductos(res)
+                    setItems(res)
                 }   
             })
     }, [catId])

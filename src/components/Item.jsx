@@ -3,21 +3,21 @@ import { Card, CardBody, Stack, Heading, Text, Divider, CardFooter, Button } fro
 import { Link } from 'react-router-dom'
 import '../styles.css'
 
-    const Item = ( {producto} ) => {
+    const Item = ( { id, categoria, imagen, nombre, precio, stock} ) => {
     return (
-        <div>
+        <div key={id}>
         <Card>
             <CardBody>
             <Stack>
                 <Heading>
-                <img src={producto.imagen} alt={producto.nombre} />
-                <p>Producto: {producto.nombre}</p>
+                <img src={imagen} alt={nombre} />
+                <p>Producto: {nombre}</p>
                 </Heading>
-                <Text>Categoría: {producto.categoria}</Text>
+                <Text>Categoría: {categoria}</Text>
             </Stack>
             </CardBody>
             <CardFooter>
-            <Link to={`/item/${producto.id}`} >
+            <Link to={`/item/${id}`} >
                 <Button className='btn'>Más detalles</Button>
             </Link>
             </CardFooter>

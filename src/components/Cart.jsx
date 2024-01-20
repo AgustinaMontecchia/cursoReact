@@ -3,7 +3,7 @@ import { CartContext } from '../context/CartContext';
 import { Box, Card, Divider, Heading, Stack, Text, CardFooter,Button } from '@chakra-ui/react';
 
 const Cart = () => {
-    const { cart, fullPrice, eraseCart } = useContext(CartContext)
+    const { cart, setCart } = useContext(CartContext)
 
     const clearCart = () => {
         eraseCart()

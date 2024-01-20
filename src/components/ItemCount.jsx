@@ -1,9 +1,38 @@
-import React from 'react'
+import React, { useContext, useState} from 'react'
+import { CartContext} from '../context/CartContext'
 import { Button } from '@chakra-ui/react'
 import '../styles.css'
 
-const ItemCount = ({ stock, counter, min, sum, addToCart}) => {  
-    
+const ItemCount = ( { id, nombre, stock, precio } ) => {
+
+    const [cart, setCart] = useContext(CartContext);
+    const [counter, setCounter] = useState(1);
+
+    const sum = () => {
+        setCounter(counter + 1);
+    };
+
+    const min = () => {
+        setCounter(counter - 1);
+    };
+
+    const addToCart = () => {
+        setCart((cartActual) => {
+            const isInCart = cartActual.find((item) => item.id === id);
+            if (isInCart) {
+                return cartActual.map((item) => {
+                    if (item.id === id) {
+                        return { ...item, stock: item.stock + count };
+                    } else {
+                    return item;
+                    }
+                });
+            } else {
+            return [...cartActual, { id, stock: counter, precio, nombre }];
+            }
+        });
+    };
+
     return (
         <div>
             {counter > 0 ? <Button colorScheme='red' size='sm' onClick={min}>Quitar</Button> : <Button disabled>Quitar</Button>}
