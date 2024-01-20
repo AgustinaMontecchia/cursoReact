@@ -1,15 +1,16 @@
 import React from 'react'
 import CartWidget from './CartWidget';
-import { Flex, Spacer, Box, Menu, MenuButton, MenuList, MenuItem } from '@chakra-ui/react'
+import { Heading, Flex, Spacer, Box, Menu, MenuButton, MenuList, MenuItem } from '@chakra-ui/react'
 import { Link } from 'react-router-dom';
 import '../styles.css'
 
-const NavBar = () => {
+function NavBar () {
     return (
-        <Flex className='nav'>
-            <Box p='4'>
+        <Box backgroundColor='#A5B381'>
+            <Flex>
+                <Box p='4' backgroundColor='pink'>
                 <Link to={'/'}>
-                    <h1>Camiflex Pinturería </h1>
+                    <Heading size='x1'>Camiflex Pinturería </Heading>
                 </Link>
             </Box>
             <Spacer />
@@ -36,12 +37,13 @@ const NavBar = () => {
                 </MenuList>
             </Menu>
             <Spacer />
-            <Box p='4'>
+            <Box p='4' backgroundColor='pink'>
                 <Link to={"/cart"}>
                     <CartWidget />
                 </Link>
             </Box>
         </Flex>
+        </Box>
     );
 }
 export default NavBar
