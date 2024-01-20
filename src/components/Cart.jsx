@@ -30,11 +30,11 @@ const Cart = () => {
                         </Box>
                     </Card>
                     <Divider orientation='horizontal' />
-                    <Text>PRECIO TOTAL: ${fullPrice()}</Text>
-                    <Button onClick={clearCart}>Vaciar Carrito</Button>
                     </div>
                 ))
             }
+            <Text>PRECIO TOTAL: ${fullPrice()}</Text>
+            <Button onClick={clearCart}>Vaciar Carrito</Button>
             </div>
         )
 }

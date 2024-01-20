@@ -8,8 +8,8 @@ import React from 'react'
 
 const App = () => {
   return (
-    <CartProvider>
-      <BrowserRouter>
+    <BrowserRouter>
+      <CartProvider>
         <NavBar />  
         <Routes>
           <Route exact path="/" element={<ItemListContainer />} />
@@ -17,8 +17,8 @@ const App = () => {
           <Route path="/category/:categoria" element={<ItemListContainer />} />
           <Route exact path="/cart" element={<Cart />} />
         </Routes>
-      </BrowserRouter>
       </CartProvider>
+      </BrowserRouter>
   )
 }
 

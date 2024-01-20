@@ -27,4 +27,4 @@ import '../styles.css'
     )
 }
 
-export default Item;
+export default React.memo(Item);
