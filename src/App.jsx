@@ -5,20 +5,22 @@ import ItemListContainer from './components/ItemListContainer.jsx';
 import NavBar from './components/NavBar.jsx'
 import Cart from './components/Cart.jsx';
 import React from 'react'
+import Formulario from './components/Formulario.jsx';
 
 const App = () => {
   return (
-    <BrowserRouter>
-      <CartProvider>
+    <CartProvider>
+      <BrowserRouter>
         <NavBar />  
         <Routes>
-          <Route exact path="/" element={<ItemListContainer />} />
-          <Route path="/item/:idFilter" element={<ItemDetailContainer />} />
-          <Route path="/category/:categoria" element={<ItemListContainer />} />
+        <Route path="/" element={<ItemListContainer />} />
+          <Route path="/item/:id" element={<ItemDetailContainer />} />
+          <Route path="/category/:categoryId" element={<ItemListContainer />} />
           <Route exact path="/cart" element={<Cart />} />
+          <Route exact path="/orden" element={<Formulario />} />
         </Routes>
-      </CartProvider>
       </BrowserRouter>
+      </CartProvider>
   )
 }
 

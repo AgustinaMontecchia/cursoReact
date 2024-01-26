@@ -1,4 +1,5 @@
 # React + Vite
+<h1 align="center"> CamiFlex Pinturerías </h1>
 Proyecto e-commerce para camiflex, utilizando react
 
 ![Screen_recording-2023-12-26_11-38-29 gif](https://github.com/AgustinaMontecchia/cursoReact/assets/110697047/93538f44-38c5-4ea5-9b4f-a9f94c793037)

@@ -1,30 +1,33 @@
 import React from 'react'
-import { Card, CardBody, Stack, Heading, Text, Divider, CardFooter, Button } from '@chakra-ui/react'
+import { Card, CardBody, Stack, Heading, Text, Divider, CardFooter, Button, Image } from '@chakra-ui/react'
 import { Link } from 'react-router-dom'
-import '../styles.css'
 
-    const Item = ( { id, categoria, imagen, nombre, precio, stock} ) => {
+    const Item = ( { id, categoria, imagen, nombre } ) => {
     return (
         <div key={id}>
         <Card>
             <CardBody>
             <Stack>
+                <Image src={imagen} alt={nombre}/>
                 <Heading>
-                <img src={imagen} alt={nombre} />
-                <p>Producto: {nombre}</p>
+                    {nombre}
                 </Heading>
-                <Text>Categoría: {categoria}</Text>
+                <Text>
+                    Categoría: {categoria}
+                </Text>
             </Stack>
             </CardBody>
             <CardFooter>
-            <Link to={`/item/${id}`} >
-                <Button className='btn'>Más detalles</Button>
-            </Link>
+                <Link to={`/item/${id}`} >
+                    <Button backgroundColor="#F64040" color="white">
+                        Más detalles
+                    </Button>
+                </Link>
             </CardFooter>
             <Divider />
-        </Card>
+            </Card>
         </div>
-    )
+    );
 }
 
 export default React.memo(Item);
