@@ -1,6 +1,6 @@
 # React + Vite
 ## CamiFlex Pinturerías
-Proyecto e-commerce para camiflex pinturerías, utilizando React, Firebase y Chakra UI.
+:computer: Proyecto e-commerce para camiflex pinturerías, utilizando React, Firebase y Chakra UI.
 En el mismo, los productos se pueden encontrar en la página principal, o así mismo por su categoría correspondiente.
 Se pueden ampliar los detalles si se desea agregarlos al carrito, o saber más sobre éstos.
 Dentro del carrito se pueden modificar los ítems anteriormente elegidos, agregando o eliminandolos.
