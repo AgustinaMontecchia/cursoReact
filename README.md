@@ -13,6 +13,7 @@
 
 
 :red_circle: Si se finaliza la compra, se completa el formulario, y se envían los datos de compra al Firebase.
+![Screen_recording-2024-01-26_10-02-18](https://github.com/AgustinaMontecchia/cursoReact/assets/110697047/bb636b5a-6eb9-4c87-b1fe-69631319c964)
 
 ![Screen_recording-2023-12-26_11-38-29 gif](https://github.com/AgustinaMontecchia/cursoReact/assets/110697047/93538f44-38c5-4ea5-9b4f-a9f94c793037)
 
